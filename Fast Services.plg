@@ -1,0 +1,35 @@
+--------------------Configuration: Fast Services - Win32 Debug--------------------
+Begining build with project "F:\DevStudio\MyProjects\FastServices\Fast Services.dsp", at root.
+Active configuration is Win32 (x86) Application (based on Win32 (x86) Application)
+
+Project's tools are:
+			"32-bit C/C++ Compiler for 80x86" with flags "/nologo /MTd /W3 /Gm /GX /Zi /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /Fp"Debug/Fast Services.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /c "
+			"OLE Type Library Maker" with flags "/nologo /D "_DEBUG" /mktyplib203 /o NUL /win32 "
+			"Win32 Resource Compiler" with flags "/l 0x409 /fo"Debug/Fast Services.res" /d "_DEBUG" "
+			"Browser Database Maker" with flags "/nologo /o"Debug/Fast Services.bsc" "
+			"COFF Linker for 80x86" with flags "/nologo /subsystem:windows /incremental:yes /pdb:"Debug/FastServices.pdb" /debug /machine:I386 /out:"Debug/FastServices.exe" /pdbtype:sept "
+			"Custom Build" with flags ""
+			"<Component 0xa>" with flags ""
+
+Creating temp file "C:\WIN98\TEMP\RSP1170.TMP" with contents </nologo /MTd /W3 /Gm /GX /Zi /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /Fp"Debug/Fast Services.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /c 
+"F:\DevStudio\MyProjects\FastServices\Fast ServicesDlg.cpp"
+>
+Creating command line "cl.exe @C:\WIN98\TEMP\RSP1170.TMP" 
+Creating temp file "C:\WIN98\TEMP\RSP1171.TMP" with contents </nologo /subsystem:windows /incremental:yes /pdb:"Debug/FastServices.pdb" /debug /machine:I386 /out:"Debug/FastServices.exe" /pdbtype:sept 
+.\Debug\DlgPreferences.obj
+.\Debug\DlgRegister.obj
+".\Debug\Fast Services.obj"
+".\Debug\Fast ServicesDlg.obj"
+.\Debug\RegCode.obj
+.\Debug\Registry.obj
+.\Debug\ServicesListCtrl.obj
+.\Debug\StdAfx.obj
+".\Debug\Fast Services.res">
+Creating command line "link.exe @C:\WIN98\TEMP\RSP1171.TMP" 
+Compiling...
+Fast ServicesDlg.cpp
+Linking...
+
+
+
+FastServices.exe - 0 error(s), 0 warning(s)

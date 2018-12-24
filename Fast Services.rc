@@ -1,0 +1,330 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif\r\n"
+    "#include ""res\\Fast Services.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\Fast Services.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 193, 137
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About Fast Services"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,6,7,20,20
+    LTEXT           "Fast Services Version 1.02",IDC_STATIC,37,7,94,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) 1998 Howard Uman",IDC_STATIC,37,16,108,8
+    DEFPUSHBUTTON   "OK",IDOK,154,7,32,14,WS_GROUP
+    LTEXT           "Howard Uman",IDC_STATIC,37,32,46,8
+    LTEXT           "505 Farms Drive",IDC_STATIC,37,49,52,8
+    LTEXT           "Burlington, MA  01803",IDC_STATIC,37,57,71,8
+    LTEXT           "unHUman Software",IDC_STATIC,37,40,63,8
+    LTEXT           "Registration is $10.  Please see the registration page.  Please make payment payable to Howard Uman.  Thank you.",
+                    IDC__REGISTRATION_INFO,37,105,143,25
+    PUSHBUTTON      " Email: human@unhuman.com",IDC_BUTTON_EMAIL,37,68,118,
+                    11,BS_LEFT
+    PUSHBUTTON      " Go To: http://www.unhuman.com",IDC_BUTTON_WEB,37,82,
+                    118,11,BS_LEFT
+END
+
+IDD_FASTSERVICES_DIALOG DIALOGEX 0, 0, 325, 153
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Fast Services"
+MENU IDR_MENU_FAST_SERVICES
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "&Refresh",IDC_BUTTON_REFRESH,268,7,50,14
+    CONTROL         "List3",IDC_LIST_SERVICES,"SysListView32",LVS_REPORT | 
+                    LVS_SORTASCENDING | LVS_OWNERDRAWFIXED | WS_BORDER | 
+                    WS_TABSTOP,7,7,253,139
+    PUSHBUTTON      "&Start",IDC_BUTTON_START,268,26,50,14
+    PUSHBUTTON      "S&top",IDC_BUTTON_STOP,268,44,50,14
+    PUSHBUTTON      "&Pause",IDC_BUTTON_PAUSE,268,63,50,14
+    PUSHBUTTON      "&Continue",IDC_BUTTON_CONTINUE,268,82,50,14
+    RTEXT           "Status",IDC_STATIC_STATUS,267,138,51,8
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME | SS_SUNKEN,1,0,324,
+                    1
+END
+
+IDD_DIALOG_PREFERENCE DIALOG DISCARDABLE  0, 0, 170, 137
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Fast Services Preferences"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,31,117,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,87,117,50,14
+    CONTROL         "Auto Refresh",IDC_CHECK_AUTOREFRESH,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,8,6,57,10
+    CONTROL         "Auto Refresh only when Fast Services is the active window",
+                    IDC_CHECK_AUTOREFRESH_ONLY_ON_TOP,"Button",
+                    BS_AUTOCHECKBOX | BS_TOP | BS_MULTILINE | WS_DISABLED | 
+                    WS_TABSTOP,20,19,135,18
+    LTEXT           "Auto Refresh can use up a significant percentage of CPU.  Therefore, it is not recommended that you use this feature.  If you choose to use it, you should consider leaving ""Auto Refresh only when Fast Services is the active window"" checked.",
+                    IDC_STATIC,8,42,157,41
+    LTEXT           "Fast Services automatically refreshes when it regains focus (becomes the top window), so these features are provided for convenience.",
+                    IDC_STATIC,8,86,155,26
+END
+
+IDD_REGISTER DIALOG DISCARDABLE  0, 0, 178, 191
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Fast Services Registration"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,40,170,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,96,170,50,14
+    LTEXT           "Fast Services trial period has expired.",
+                    IDC_STATIC_EXPIRATION,7,7,164,8
+    LTEXT           "In order to use Fast Services beyond the trial period, you must register.  Registration costs $10.",
+                    IDC_STATIC,7,20,164,17
+    LTEXT           "To obtain a registration code, please contact:",
+                    IDC_STATIC,7,41,164,9
+    LTEXT           "Howard Uman",IDC_STATIC,30,55,46,8
+    LTEXT           "unHUman Software",IDC_STATIC,30,63,63,8
+    LTEXT           "505 Farms Drive",IDC_STATIC,30,71,52,8
+    LTEXT           "Burlington, MA  01803",IDC_STATIC,30,79,71,8
+    PUSHBUTTON      " Email: human@unhuman.com",IDC_BUTTON_EMAIL,30,89,118,
+                    13,BS_LEFT
+    PUSHBUTTON      " Go To: http://www.unhuman.com",IDC_BUTTON_WEB,30,104,
+                    118,12,BS_LEFT
+    RTEXT           "User Name:",IDC_STATIC,7,123,58,10,SS_CENTERIMAGE
+    RTEXT           "Registration Code:",IDC_STATIC,7,139,58,8
+    EDITTEXT        IDC_EDIT_USERNAME,67,122,104,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_REGISTRATION_CODE,67,137,104,12,ES_AUTOHSCROLL
+    CTEXT           "Please make payment payable to Howard Uman.",IDC_STATIC,
+                    7,155,164,9
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "Fast Services MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "Fast Services\0"
+            VALUE "LegalCopyright", "Copyright (C) 1998\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Fast Services.EXE\0"
+            VALUE "ProductName", "Fast Services Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 186
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 130
+    END
+
+    IDD_FASTSERVICES_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 318
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 146
+    END
+
+    IDD_DIALOG_PREFERENCE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 130
+    END
+
+    IDD_REGISTER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 171
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 184
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP_STOPPED      BITMAP  DISCARDABLE     "res\\bitmap1.bmp"
+IDB_BITMAP_STARTED      BITMAP  DISCARDABLE     "res\\bmp00001.bmp"
+IDB_BITMAP_CHANGING     BITMAP  DISCARDABLE     "res\\bmp00002.bmp"
+IDB_BITMAP_UNKNOWN      BITMAP  DISCARDABLE     "res\\bmp00003.bmp"
+IDB_BITMAP_PAUSED       BITMAP  DISCARDABLE     "res\\bmp00004.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU_FAST_SERVICES MENU DISCARDABLE 
+BEGIN
+    POPUP "&Action"
+    BEGIN
+        MENUITEM "&About Fast Services",        ID_ACTION_ABOUTFASTSERVICES
+        MENUITEM "&Register",                   ID_ACTION_REGISTER
+        MENUITEM "&Preferences",                ID_ACTION_PREFERENCES
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_ACTION_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Win32 (standard) Services",  ID_VIEW_WIN32_SERVICES
+        , CHECKED
+        MENUITEM "&Kernel Services",            ID_VIEW_KERNEL_SERVICES
+        MENUITEM "&File System Services",       ID_VIEW_FILE_SYSTEM_SERVICES
+        MENUITEM SEPARATOR
+        MENUITEM "&Relist",                     ID_VIEW_RELIST
+        MENUITEM SEPARATOR
+        MENUITEM "&Show Errors",                ID_VIEW_SHOWERRORS, CHECKED
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About Fast Services..."
+    IDS_FAILURE_GETWINDIR   "Failure retrieving Windows directory."
+    IDS_REGISTRY_KEY        "SOFTWARE\\unHUman Software\\FastServices"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif
+#include "res\Fast Services.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
